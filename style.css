@@ -1,0 +1,36 @@
+:root {
+  --bg: #0f1115;
+  --panel: #1a1d24;
+  --fg: #f2f2f2;
+  --muted: #9aa0a8;
+  --accent: #ffb020;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 18px/1.6 -apple-system, "Avenir Next", "Segoe UI", Roboto, sans-serif;
+}
+
+main { max-width: 720px; margin: 0 auto; padding: 48px 16px 64px; }
+
+header { text-align: center; margin-bottom: 40px; }
+header img { border-radius: 50%; }
+h1 { font-size: clamp(2rem, 6vw, 3rem); margin: 16px 0 8px; line-height: 1.1; }
+h2 { font-size: 1.25rem; margin: 0 0 8px; }
+.accent { color: var(--accent); }
+.lead { color: var(--muted); margin: 0; }
+
+section { background: var(--panel); border-radius: 12px; padding: 20px 24px; margin-bottom: 16px; }
+section p:last-child, section ul:last-child { margin-bottom: 0; }
+
+a { color: var(--accent); }
+.button {
+  display: inline-block; padding: 10px 18px; border-radius: 999px;
+  background: var(--accent); color: var(--bg); font-weight: 700; text-decoration: none;
+}
+
+footer { text-align: center; margin-top: 32px; color: var(--muted); }
