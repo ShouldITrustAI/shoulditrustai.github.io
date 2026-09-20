@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Results and method — Should I Trust AI?</title>
+<meta name="description" content="How we test free AI models, and where to read every question, every answer and every score.">
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header>
+    <h1>Results &amp; <span class="accent">method</span></h1>
+    <p class="lead">Every question, every answer, every score — published in full.</p>
+  </header>
+
+  <section>
+    <h2>Read the raw results</h2>
+    <p>Nothing is summarised away. Each run holds the exact questions we asked, every model's complete answer word for word, the score it was given and why.</p>
+    <p><a class="button" href="https://github.com/ShouldITrustAI/bench-results">Open the results archive</a></p>
+  </section>
+
+  <section>
+    <h2>How we test</h2>
+    <ul>
+      <li>We ask free AI models the questions people actually ask.</li>
+      <li>Every model gets the <strong>same question, the same day, the same settings</strong>.</li>
+      <li>Answers are checked against something written down — a law, an official guideline, a known correct result — not against our opinion.</li>
+      <li>The scoring is automatic. Nobody picks the winner.</li>
+      <li>If a model's provider failed to answer, that is recorded as an outage. It is never counted as a wrong answer, and a model that never replied is left out of the scoreboard rather than shown at zero.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>What the first test found</h2>
+    <p>Run of 20 September 2026: three free models, ten consumer-rights questions — four about Argentina, four about the EU.</p>
+    <table>
+      <thead>
+        <tr><th>Model</th><th>EU questions</th><th>Argentine questions</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>DeepSeek V4 Flash</td><td>100%</td><td>87.5%</td></tr>
+        <tr><td>Qwen 3.8 27B</td><td>100%</td><td>66.7%</td></tr>
+        <tr><td>GPT-OSS 120B</td><td>100%</td><td>41.7%</td></tr>
+      </tbody>
+    </table>
+    <p>All three were perfect on EU consumer rights. On Argentine rights they were not — and none of them sounded any less certain while getting it wrong. That is the finding: <strong>confidence does not drop when accuracy does</strong>.</p>
+  </section>
+
+  <section>
+    <h2>What this does not prove</h2>
+    <p>This was one run of ten questions. Four Argentine questions is a small sample, and DeepSeek's provider failed to answer three of the ten, so it is scored on the seven it did answer. Free models also change without notice, so a result from one week may not hold the next.</p>
+    <p>We are testing the AI, not the country and not the law. The law is only the measuring stick — it is written down, so anyone can check the answer.</p>
+    <p><strong>None of this is legal advice.</strong> Before you rely on a deadline or a right, check your own country's consumer authority.</p>
+  </section>
+
+  <footer>
+    <a href="index.html">Home</a> · <a href="privacy.html">Privacy policy</a>
+  </footer>
+</main>
+</body>
+</html>
